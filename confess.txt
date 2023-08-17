@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+
+Int main() {
+    Std::string confession_message = “To you (MAGDALENA CISILIA SOEPRAPTO), I like you so much, I like everything about you, even though you say you are lacking, but in my eyes you are still the best part for me, and this is a green light for me, and thank you for giving me the opportunity to love you, and I will try not to disappoint you”;
+    Char answer;
+
+    // Meminta konfirmasi dari pengguna.
+    While (true) {
+        Std::cout << “Bubub DP dulu yakkk, tahan dulu sampe ketemuan yaa sayang, will you merry me? (y/n): “;
+        Std::cin >> answer;
+
+        // Jika pengguna memilih “Ya,” tampilkan pesan cinta dan pilihan lanjutan.
+        If (answer == ‘y’ || answer == ‘Y’) {
+            Std::cout << “\n” << confession_message << std::endl;
+            Std::cout << “Pilih salah satu dari opsi berikut:\n”;
+            Std::cout << “1. Jadi pacarku\n”;
+            Std::cout << “2. Istriku\n”;
+            Std::cout << “3. Keduanya benar\n”;
+            Int choice;
+            Std::cin >> choice;
+
+            Switch (choice) {
+                Case 1:
+                    Std::cout << “Selamat! Sekarang kamu menjadi pacarku.” << std::endl;
+                    Break;
+                Case 2:
+                    Std::cout << “Selamat! Sekarang kamu menjadi istriku.” << std::endl;
+                    Break;
+                Case 3:
+                    Std::cout << “Selamat! Sekarang kamu menjadi pacarku dan istriku.” << std::endl;
+                    Std::cout << “Pilihan yang hebat! Semoga hubungan kita langgeng dan bahagia selamanya.” << std::endl;
+                    Break;
+                Default:
+                    Std::cout << “Pilihan tidak valid.” << std::endl;
+            }
+            Break;
+        }
+        // Jika pengguna memilih “Tidak,” lanjutkan ke iterasi berikutnya.
+        Else if (answer == ‘n’ || answer == ‘N’) {
+            Continue;
+        }
+        // Jika pengguna memilih karakter selain “y/Y” atau “n/N,” beri peringatan.
+        Else {
+            Std::cout << “Pilihan tidak valid. Silakan masukkan ‘y’ atau ‘n’.” << std::endl;
+        }
+    }
+
+    Return 0;
+}
+
